@@ -1,0 +1,51 @@
+[
+  {
+    "id": "full-stack-developer",
+    "title": "Full Stack Software Engineer",
+    "description": "Designs and delivers scalable client-facing web applications, robust backend microservices, database schemas, and automated CI pipelines.",
+    "must_have_skills": ["javascript", "react", "python", "fastapi", "sql", "git", "rest-apis"],
+    "nice_to_have_skills": ["docker", "typescript", "tailwind-css", "postgresql", "ci-cd", "unit-testing"],
+    "typical_requirements": [
+      "Proficiency with modern JavaScript/TypeScript and React frontend ecosystems.",
+      "Hands-on experience building asynchronous RESTful APIs using Python or Node.js.",
+      "Solid understanding of relational database schema design, indexing, and SQL queries.",
+      "Experience with Git workflow, unit testing, and containerization using Docker."
+    ]
+  },
+  {
+    "id": "backend-engineer",
+    "title": "Backend Systems Engineer",
+    "description": "Architects low-latency server-side systems, manages database transactions, optimizes API throughput, and ensures system reliability.",
+    "must_have_skills": ["python", "fastapi", "sql", "postgresql", "rest-apis", "git", "docker"],
+    "nice_to_have_skills": ["redis", "microservices", "system-design", "ci-cd", "linux", "unit-testing"],
+    "typical_requirements": [
+      "Extensive experience developing high-performance REST APIs with Python or Go.",
+      "Deep understanding of database optimization, transaction isolation, and caching strategies.",
+      "Proven capability deploying Docker container services and building scalable architectures."
+    ]
+  },
+  {
+    "id": "frontend-engineer",
+    "title": "Frontend Engineer (React / TypeScript)",
+    "description": "Crafts beautiful, responsive, and accessible user interfaces with clean state management and modular design systems.",
+    "must_have_skills": ["javascript", "typescript", "react", "tailwind-css", "html-css", "git", "rest-apis"],
+    "nice_to_have_skills": ["unit-testing", "docker", "graphql", "system-design"],
+    "typical_requirements": [
+      "Mastery of modern React hooks, component lifecycle, and state management.",
+      "Strict typing discipline with TypeScript and rapid styling using Tailwind CSS.",
+      "Deep knowledge of responsive design, browser performance optimization, and RESTful API consumption."
+    ]
+  },
+  {
+    "id": "ai-ml-engineer",
+    "title": "AI / ML Applications Engineer",
+    "description": "Bridges machine learning models with production backend services, vector search systems, and automated data pipelines.",
+    "must_have_skills": ["python", "machine-learning", "nlp", "transformers", "rest-apis", "git"],
+    "nice_to_have_skills": ["docker", "fastapi", "postgresql", "data-structures", "linux"],
+    "typical_requirements": [
+      "Solid foundation in machine learning, NLP, and vector embeddings using Sentence Transformers.",
+      "Experience deploying ML inference pipelines behind FastAPI or Flask endpoints.",
+      "Familiarity with data manipulation, vector databases, and evaluation metrics."
+    ]
+  }
+]

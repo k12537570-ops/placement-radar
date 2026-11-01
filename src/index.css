@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default Light Mode Colors */
+  --color-bg: #FAF7F2;
+  --color-card: #FFFFFF;
+  --color-secondary-bg: #F4EFEA;
+  --color-hover: #F0ECE4;
+  --color-border: #E5E0D8;
+  --color-border-focus: #C8442B;
+  --color-text: #1A1A1A;
+  --color-text-muted: #66615B;
+  --color-text-subtle: #99938B;
+  --color-text-inverse: #FFFFFF;
+
+  /* Default Theme: Brick Red */
+  --color-accent: #C8442B;
+  --color-accent-hover: #B03A22;
+  --color-accent-light: #FCECE9;
+  --color-accent-contrast: #FFFFFF;
+
+  /* Font scale */
+  --base-font-size: 16px;
+}
+
+/* Dark Mode */
+[data-mode="dark"] {
+  --color-bg: #141413;
+  --color-card: #1D1D1B;
+  --color-secondary-bg: #262624;
+  --color-hover: #2F2F2C;
+  --color-border: #333330;
+  --color-border-focus: var(--color-accent);
+  --color-text: #F5F2EB;
+  --color-text-muted: #A8A39D;
+  --color-text-subtle: #6E6963;
+  --color-text-inverse: #141413;
+  --color-accent-light: rgba(200, 68, 43, 0.2);
+}
+
+/* Accent Themes */
+[data-theme="brick-red"] {
+  --color-accent: #C8442B;
+  --color-accent-hover: #B03A22;
+  --color-accent-light: #FCECE9;
+}
+[data-mode="dark"][data-theme="brick-red"] {
+  --color-accent-light: rgba(200, 68, 43, 0.2);
+}
+
+[data-theme="ocean-blue"] {
+  --color-accent: #1D63B8;
+  --color-accent-hover: #164E94;
+  --color-accent-light: #EBF2FA;
+}
+[data-mode="dark"][data-theme="ocean-blue"] {
+  --color-accent-light: rgba(29, 99, 184, 0.2);
+}
+
+[data-theme="forest-green"] {
+  --color-accent: #2D6A4F;
+  --color-accent-hover: #1E4E39;
+  --color-accent-light: #EBF5F0;
+}
+[data-mode="dark"][data-theme="forest-green"] {
+  --color-accent-light: rgba(45, 106, 79, 0.2);
+}
+
+[data-theme="royal-purple"] {
+  --color-accent: #6D28D9;
+  --color-accent-hover: #561EB3;
+  --color-accent-light: #F3EAFD;
+}
+[data-mode="dark"][data-theme="royal-purple"] {
+  --color-accent-light: rgba(109, 40, 217, 0.2);
+}
+
+[data-theme="sunset-orange"] {
+  --color-accent: #D95D28;
+  --color-accent-hover: #B84717;
+  --color-accent-light: #FDF0EB;
+}
+[data-mode="dark"][data-theme="sunset-orange"] {
+  --color-accent-light: rgba(217, 93, 40, 0.2);
+}
+
+[data-theme="slate-mono"] {
+  --color-accent: #334155;
+  --color-accent-hover: #1E293B;
+  --color-accent-light: #F1F5F9;
+}
+[data-mode="dark"][data-theme="slate-mono"] {
+  --color-accent-light: rgba(51, 65, 85, 0.25);
+}
+
+/* Font Size Scales */
+[data-font-size="small"] {
+  font-size: 14px;
+}
+[data-font-size="medium"] {
+  font-size: 16px;
+}
+[data-font-size="large"] {
+  font-size: 18px;
+}
+
+/* Reduce Motion */
+[data-reduce-motion="true"] *,
+[data-reduce-motion="true"] *::before,
+[data-reduce-motion="true"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Slider custom styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* WebKit Track & Thumb */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--color-border);
+  height: 6px;
+  border-radius: 9999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  background-color: var(--color-accent);
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Firefox Track & Thumb */
+input[type="range"]::-moz-range-track {
+  background: var(--color-border);
+  height: 6px;
+  border-radius: 9999px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--color-accent);
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Print Stylesheet for Report and Resume */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+}
+
+
+/* Resume Templates Custom Styling */
+.resume-classic h1,
+.resume-classic h2 {
+  font-family: 'Fraunces', 'Playfair Display', serif;
+}
+
+.resume-modern {
+  border-top: 6px solid var(--color-accent);
+}
+
+.resume-modern h2 {
+  color: var(--color-accent);
+}
+
+.resume-minimal {
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.resume-minimal h2 {
+  border-bottom: 1.5px solid #1A1A1A;
+}

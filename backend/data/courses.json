@@ -1,0 +1,470 @@
+{
+  "python": [
+    {
+      "title": "Python for Everybody Specialization (Free Audit)",
+      "provider": "University of Michigan / Coursera & Py4E",
+      "url": "https://www.py4e.com/lessons",
+      "type": "Interactive Course",
+      "cost": "Free",
+      "estimated_time": "15 hours"
+    },
+    {
+      "title": "Official Python 3 Tutorial & Standard Library Docs",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/",
+      "type": "Documentation",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    }
+  ],
+  "javascript": [
+    {
+      "title": "The Modern JavaScript Tutorial",
+      "provider": "JavaScript.info",
+      "url": "https://javascript.info/",
+      "type": "Comprehensive Guide",
+      "cost": "Free",
+      "estimated_time": "20 hours"
+    },
+    {
+      "title": "JavaScript Algorithms and Data Structures Certification",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+      "type": "Interactive Platform",
+      "cost": "Free",
+      "estimated_time": "25 hours"
+    }
+  ],
+  "typescript": [
+    {
+      "title": "TypeScript Handbook & Practical Exercises",
+      "provider": "Official TypeScript Documentation",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "type": "Official Guide",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "Total TypeScript Fundamentals & Beginners Guide",
+      "provider": "Matt Pocock / Total TypeScript",
+      "url": "https://www.totaltypescript.com/tutorials/beginners-typescript",
+      "type": "Interactive Video & Code",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    }
+  ],
+  "react": [
+    {
+      "title": "React Official Documentation: Quick Start & Deep Dives",
+      "provider": "React Team (react.dev)",
+      "url": "https://react.dev/learn",
+      "type": "Official Interactive Docs",
+      "cost": "Free",
+      "estimated_time": "18 hours"
+    },
+    {
+      "title": "Full Stack Open: Deep Dive Into Modern Web Development (React & State)",
+      "provider": "University of Helsinki",
+      "url": "https://fullstackopen.com/en/part1",
+      "type": "University Course",
+      "cost": "Free",
+      "estimated_time": "22 hours"
+    }
+  ],
+  "fastapi": [
+    {
+      "title": "FastAPI Official Tutorial - User Guide (Step-by-Step)",
+      "provider": "Tiangolo / FastAPI Docs",
+      "url": "https://fastapi.tiangolo.com/tutorial/",
+      "type": "Interactive Docs",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    },
+    {
+      "title": "FastAPI Full Course - Building Modern Asynchronous APIs",
+      "provider": "freeCodeCamp YouTube",
+      "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA",
+      "type": "Video Course",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    }
+  ],
+  "nodejs": [
+    {
+      "title": "Node.js Complete Guide for Beginners",
+      "provider": "Nodejs.org Guides",
+      "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+      "type": "Official Guide",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    },
+    {
+      "title": "Backend Development and APIs Certification (Node & Express)",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/",
+      "type": "Interactive Lab",
+      "cost": "Free",
+      "estimated_time": "20 hours"
+    }
+  ],
+  "rest-apis": [
+    {
+      "title": "RESTful API Architectural Guidelines and Best Practices",
+      "provider": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+      "type": "Technical Guide",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    },
+    {
+      "title": "API Design in Practice: Status Codes, Headers & Versioning",
+      "provider": "Microsoft REST API Guidelines",
+      "url": "https://github.com/microsoft/api-guidelines",
+      "type": "Industry Standard Guide",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    }
+  ],
+  "sql": [
+    {
+      "title": "SQLBolt - Interactive Lessons to Learn SQL Fast",
+      "provider": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "type": "Interactive Exercises",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Relational Database Certification (PostgreSQL & Bash)",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn/relational-database/",
+      "type": "Interactive Curriculum",
+      "cost": "Free",
+      "estimated_time": "25 hours"
+    }
+  ],
+  "postgresql": [
+    {
+      "title": "PostgreSQL Tutorial for Developers",
+      "provider": "PostgreSQLTutorial.com",
+      "url": "https://www.postgresqltutorial.com/",
+      "type": "Practical Reference",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    },
+    {
+      "title": "PostgreSQL Official Administration & Query Optimization Guide",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "type": "Official Documentation",
+      "cost": "Free",
+      "estimated_time": "15 hours"
+    }
+  ],
+  "mongodb": [
+    {
+      "title": "MongoDB Basics & Aggregation Framework",
+      "provider": "MongoDB University",
+      "url": "https://learn.mongodb.com/",
+      "type": "Official Interactive Course",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "MongoDB Crash Course with Node.js & Python Drivers",
+      "provider": "Traversy Media / YouTube",
+      "url": "https://www.youtube.com/watch?v=-56x56UppqQ",
+      "type": "Video Workshop",
+      "cost": "Free",
+      "estimated_time": "4 hours"
+    }
+  ],
+  "redis": [
+    {
+      "title": "Redis University - Redis for Python / JS Developers",
+      "provider": "Redis University",
+      "url": "https://university.redis.com/",
+      "type": "Official Free Certification",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Redis Crash Course: Caching, Pub/Sub & Rate Limiting",
+      "provider": "freeCodeCamp YouTube",
+      "url": "https://www.youtube.com/watch?v=XCsS_NVAa1g",
+      "type": "Video Workshop",
+      "cost": "Free",
+      "estimated_time": "4 hours"
+    }
+  ],
+  "docker": [
+    {
+      "title": "Docker Hands-On Workshop & Container Fundamentals",
+      "provider": "Docker Curriculum",
+      "url": "https://docker-curriculum.com/",
+      "type": "Interactive Guide",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "Docker Official Getting Started Lab",
+      "provider": "Docker Documentation",
+      "url": "https://docs.docker.com/get-started/",
+      "type": "Hands-on Lab",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    }
+  ],
+  "git": [
+    {
+      "title": "Pro Git Book (Complete 2nd Edition)",
+      "provider": "Scott Chacon & Ben Straub / Git-SCM",
+      "url": "https://git-scm.com/book/en/v2",
+      "type": "Comprehensive Ebook",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "Learn Git Branching (Interactive Visualizer)",
+      "provider": "Learn Git Branching Org",
+      "url": "https://learngitbranching.js.org/",
+      "type": "Interactive Sandbox",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    }
+  ],
+  "ci-cd": [
+    {
+      "title": "GitHub Actions Official Quickstart & Workflow Syntax",
+      "provider": "GitHub Docs",
+      "url": "https://docs.github.com/en/actions/quickstart",
+      "type": "Documentation & Hands-on",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Continuous Integration and Continuous Delivery with GitHub Actions",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/news/learn-github-actions-in-one-hour/",
+      "type": "Tutorial & Project Guide",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    }
+  ],
+  "aws": [
+    {
+      "title": "AWS Cloud Practitioner Essentials (Free Digital Training)",
+      "provider": "AWS Skill Builder",
+      "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials",
+      "type": "Official Digital Training",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner Full Course",
+      "provider": "freeCodeCamp YouTube",
+      "url": "https://www.youtube.com/watch?v=SOTamWNgDKc",
+      "type": "Comprehensive Video Course",
+      "cost": "Free",
+      "estimated_time": "14 hours"
+    }
+  ],
+  "tailwind-css": [
+    {
+      "title": "Tailwind CSS Official Core Concepts Guide",
+      "provider": "Tailwind Labs",
+      "url": "https://tailwindcss.com/docs/utility-first",
+      "type": "Documentation & Playground",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    },
+    {
+      "title": "Tailwind CSS Full Course for Beginners",
+      "provider": "Dave Gray / YouTube",
+      "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo",
+      "type": "Video Course",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    }
+  ],
+  "html-css": [
+    {
+      "title": "MDN Learn Web Development: HTML & CSS Modules",
+      "provider": "Mozilla Developer Network",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn",
+      "type": "Interactive Curriculum",
+      "cost": "Free",
+      "estimated_time": "20 hours"
+    },
+    {
+      "title": "Responsive Web Design Certification",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+      "type": "Project-based Certification",
+      "cost": "Free",
+      "estimated_time": "25 hours"
+    }
+  ],
+  "linux": [
+    {
+      "title": "Linux Journey - From Grasshopper to Guru",
+      "provider": "LinuxJourney.com",
+      "url": "https://linuxjourney.com/",
+      "type": "Interactive Course",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "The Missing Semester of Your CS Education: The Shell & CLI Tools",
+      "provider": "MIT CSAIL",
+      "url": "https://missing.csail.mit.edu/2020/course-shell-scripting/",
+      "type": "University Lecture & Notes",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    }
+  ],
+  "unit-testing": [
+    {
+      "title": "Effective Python Testing with Pytest",
+      "provider": "Real Python",
+      "url": "https://realpython.com/pytest-python-testing/",
+      "type": "Comprehensive Guide",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Testing JavaScript & React Applications with Jest",
+      "provider": "Jest Official Docs",
+      "url": "https://jestjs.io/docs/getting-started",
+      "type": "Official Guide",
+      "cost": "Free",
+      "estimated_time": "6 hours"
+    }
+  ],
+  "data-structures": [
+    {
+      "title": "CS50's Introduction to Computer Science",
+      "provider": "Harvard University / edX",
+      "url": "https://cs50.harvard.edu/x/",
+      "type": "Ivy League Course",
+      "cost": "Free",
+      "estimated_time": "30 hours"
+    },
+    {
+      "title": "NeetCode DSA Roadmap & Explanations",
+      "provider": "NeetCode.io",
+      "url": "https://neetcode.io/roadmap",
+      "type": "Visual Roadmap & Video Solutions",
+      "cost": "Free",
+      "estimated_time": "25 hours"
+    }
+  ],
+  "machine-learning": [
+    {
+      "title": "Machine Learning Specialization by Andrew Ng (Audit Mode)",
+      "provider": "DeepLearning.AI / Coursera",
+      "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+      "type": "University Standard Specialization",
+      "cost": "Free",
+      "estimated_time": "35 hours"
+    },
+    {
+      "title": "Scikit-Learn Machine Learning in Python",
+      "provider": "Inria / Scikit-Learn MOOC",
+      "url": "https://inria.github.io/scikit-learn-mooc/",
+      "type": "Interactive Jupyter Notebooks",
+      "cost": "Free",
+      "estimated_time": "20 hours"
+    }
+  ],
+  "nlp": [
+    {
+      "title": "Hugging Face NLP Course - Tokenization to Fine-Tuning",
+      "provider": "Hugging Face",
+      "url": "https://huggingface.co/learn/nlp-course/chapter1/1",
+      "type": "Hands-on Code & Models",
+      "cost": "Free",
+      "estimated_time": "20 hours"
+    },
+    {
+      "title": "Stanford CS224N: Natural Language Processing with Deep Learning",
+      "provider": "Stanford University Online",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "type": "Graduate Course Materials",
+      "cost": "Free",
+      "estimated_time": "30 hours"
+    }
+  ],
+  "transformers": [
+    {
+      "title": "Sentence Transformers Documentation & Semantic Search Guide",
+      "provider": "UKP Lab / SBERT.net",
+      "url": "https://sbert.net/docs/quickstart.html",
+      "type": "Official Documentation",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    },
+    {
+      "title": "Vector Embeddings & Semantic Search Explained",
+      "provider": "Cohere LLM University",
+      "url": "https://cohere.com/llmu",
+      "type": "Interactive Learning Path",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    }
+  ],
+  "system-design": [
+    {
+      "title": "System Design Primer by Donne Martin",
+      "provider": "GitHub Open Source (280k+ stars)",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "type": "Open Source Blueprint",
+      "cost": "Free",
+      "estimated_time": "25 hours"
+    },
+    {
+      "title": "System Design Interview Course for Engineers",
+      "provider": "freeCodeCamp YouTube",
+      "url": "https://www.youtube.com/watch?v=m8Icp_Cid5o",
+      "type": "Video Lecture Series",
+      "cost": "Free",
+      "estimated_time": "15 hours"
+    }
+  ],
+  "graphql": [
+    {
+      "title": "Introduction to GraphQL & Apollo Client",
+      "provider": "GraphQL.org & Apollo Odyssey",
+      "url": "https://graphql.org/learn/",
+      "type": "Official Documentation",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Full Stack GraphQL Tutorial (Node + React)",
+      "provider": "HowToGraphQL.com",
+      "url": "https://www.howtographql.com/",
+      "type": "Interactive Guide",
+      "cost": "Free",
+      "estimated_time": "12 hours"
+    }
+  ],
+  "microservices": [
+    {
+      "title": "Microservices Patterns and Anti-Patterns Guide",
+      "provider": "Martin Fowler Architecture Guides",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "type": "Architectural Essays",
+      "cost": "Free",
+      "estimated_time": "8 hours"
+    },
+    {
+      "title": "Building Event-Driven Microservices Architecture",
+      "provider": "freeCodeCamp YouTube",
+      "url": "https://www.youtube.com/watch?v=1xo-0gCVhTU",
+      "type": "Video Deep Dive",
+      "cost": "Free",
+      "estimated_time": "10 hours"
+    }
+  ]
+}

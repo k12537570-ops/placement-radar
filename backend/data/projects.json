@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cloud-task-sync",
+    "title": "Real-Time Distributed Task & Kanban Platform",
+    "problem_statement": "Engineering teams struggle with asynchronous state synchronization and delayed task updates across distributed workspaces.",
+    "skills_covered": ["react", "fastapi", "postgresql", "docker", "redis", "rest-apis"],
+    "difficulty": "Intermediate",
+    "estimated_hours": 28,
+    "technology_stack": ["React 18", "FastAPI", "PostgreSQL", "Redis Pub/Sub", "Docker Compose"],
+    "milestones": [
+      "Milestone 1: Design relational database schema for boards, cards, and team permissions with SQLAlchemy and PostgreSQL.",
+      "Milestone 2: Implement FastAPI REST endpoints with JWT authentication and WebSocket channels for live board broadcasts.",
+      "Milestone 3: Build responsive React drag-and-drop Kanban frontend using Tailwind CSS and optimistic UI state updates.",
+      "Milestone 4: Containerize backend, database, and Redis cache with Docker Compose; set up automated healthcheck endpoints."
+    ],
+    "resume_bullet": "Architected a real-time collaborative Kanban platform serving 50+ concurrent users with FastAPI and Redis WebSockets, reducing state sync latency by 45%."
+  },
+  {
+    "id": "semantic-doc-search",
+    "title": "AI Semantic Document Search & RAG Assistant",
+    "problem_statement": "Internal teams spend excessive hours searching unstructured PDF documentation and technical manuals without contextual answers.",
+    "skills_covered": ["python", "nlp", "transformers", "fastapi", "docker", "rest-apis"],
+    "difficulty": "Advanced",
+    "estimated_hours": 32,
+    "technology_stack": ["Python 3.11", "Sentence-Transformers", "FastAPI", "ChromaDB / FAISS", "Docker"],
+    "milestones": [
+      "Milestone 1: Build document ingestion pipeline parsing PDFs, chunking technical paragraphs with sliding window tokenization.",
+      "Milestone 2: Generate all-MiniLM-L6-v2 vector embeddings and index embeddings in an in-memory vector store.",
+      "Milestone 3: Develop FastAPI query endpoint performing cosine similarity semantic ranking with reranking fallbacks.",
+      "Milestone 4: Package microservice in a multi-stage Docker container with automated PyTest unit coverage above 85%."
+    ],
+    "resume_bullet": "Developed an AI semantic search microservice using Sentence Transformers and FastAPI, accelerating document discovery speed by 60% across 5,000+ files."
+  },
+  {
+    "id": "devops-microservices-pipeline",
+    "title": "Cloud-Native Microservices CI/CD Deployment Pipeline",
+    "problem_statement": "Manual deployment processes cause downtime, configuration drift, and broken builds when promoting staging code to production.",
+    "skills_covered": ["docker", "ci-cd", "aws", "linux", "unit-testing", "git"],
+    "difficulty": "Intermediate",
+    "estimated_hours": 24,
+    "technology_stack": ["GitHub Actions", "Docker", "AWS ECS / S3", "Bash", "PyTest"],
+    "milestones": [
+      "Milestone 1: Author Dockerfiles with multi-stage builds optimizing image layer caching to decrease container size under 150MB.",
+      "Milestone 2: Construct GitHub Actions CI workflow executing linter, unit test suites, and security vulnerability scans on pull requests.",
+      "Milestone 3: Configure automated container tagging and push to AWS ECR with semantic versioning triggers.",
+      "Milestone 4: Deploy automated staging rollback scripts using Bash and AWS CLI alerts upon failed health checks."
+    ],
+    "resume_bullet": "Engineered a cloud CI/CD pipeline using GitHub Actions, Docker, and AWS, cutting staging release lead time from 40 minutes to under 4 minutes."
+  },
+  {
+    "id": "fintech-metrics-dashboard",
+    "title": "Interactive High-Throughput Analytics & Metrics Engine",
+    "problem_statement": "Financial operations managers lack real-time visibility into high-volume transaction aggregations and anomaly alerts.",
+    "skills_covered": ["react", "typescript", "tailwind-css", "postgresql", "sql", "rest-apis"],
+    "difficulty": "Intermediate",
+    "estimated_hours": 25,
+    "technology_stack": ["React", "TypeScript", "Tailwind CSS", "Recharts", "PostgreSQL"],
+    "milestones": [
+      "Milestone 1: Design optimized SQL analytical queries with window functions, composite indexes, and aggregated materialized views.",
+      "Milestone 2: Build strongly-typed RESTful API endpoints with request validation and rate limiting.",
+      "Milestone 3: Construct interactive dashboard interface featuring Recharts time-series graphs, KPI filter cards, and pagination.",
+      "Milestone 4: Implement local caching and memoized computations to maintain smooth 60 FPS UI transitions during data refreshes."
+    ],
+    "resume_bullet": "Built an analytics dashboard in React, TypeScript, and PostgreSQL indexing 100k+ records, lowering database query execution time by 52% with materialized views."
+  },
+  {
+    "id": "distributed-rate-limiter",
+    "title": "High-Throughput API Rate Limiter & Caching Layer",
+    "problem_statement": "Public API gateways are vulnerable to DDoS bursts and sudden query spikes that exhaust downstream database connections.",
+    "skills_covered": ["fastapi", "redis", "system-design", "unit-testing", "docker"],
+    "difficulty": "Advanced",
+    "estimated_hours": 26,
+    "technology_stack": ["FastAPI", "Redis", "Python", "Docker", "Locust Load Testing"],
+    "milestones": [
+      "Milestone 1: Formulate sliding window counter rate-limiting algorithm in Redis Lua scripts to prevent concurrency race conditions.",
+      "Milestone 2: Integrate FastAPI middleware inspecting client IP headers, API tokens, and quota tiers.",
+      "Milestone 3: Conduct stress and load testing with Locust simulating 2,000 requests/sec with zero thread deadlocks.",
+      "Milestone 4: Package into a reusable standalone Dockerized middleware proxy with custom telemetry headers."
+    ],
+    "resume_bullet": "Designed an asynchronous rate limiting middleware in FastAPI and Redis handling 2,000+ RPS, preventing API exhaustion and shielding backend databases."
+  },
+  {
+    "id": "e-commerce-inventory-graphql",
+    "title": "Modular E-Commerce Inventory & Order Service",
+    "problem_statement": "Monolithic store backends fail under flash sales due to tight coupling between product catalog queries and inventory checkouts.",
+    "skills_covered": ["graphql", "nodejs", "typescript", "mongodb", "microservices"],
+    "difficulty": "Intermediate",
+    "estimated_hours": 30,
+    "technology_stack": ["Node.js", "TypeScript", "Apollo GraphQL", "MongoDB", "Jest"],
+    "milestones": [
+      "Milestone 1: Define GraphQL schema types, queries, and mutations for flexible catalog filtering and cart mutations.",
+      "Milestone 2: Implement DataLoader batching and caching patterns to eliminate N+1 database queries on related collections.",
+      "Milestone 3: Establish atomic MongoDB transactional reservations during checkout to prevent duplicate inventory deductions.",
+      "Milestone 4: Write end-to-end integration tests using Jest and supertest covering concurrency edge cases."
+    ],
+    "resume_bullet": "Constructed a high-concurrency inventory service using Apollo GraphQL, Node.js, and MongoDB, eradicating N+1 queries and preserving zero oversell consistency."
+  }
+]

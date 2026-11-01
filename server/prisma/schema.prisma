@@ -1,0 +1,228 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String            @id @default(cuid())
+  name           String
+  email          String            @unique
+  passwordHash   String?
+  college        String?
+  graduationYear String?
+  isGuest        Boolean           @default(false)
+  guestExpiresAt DateTime?
+  targetRole     String?           @default("swe")
+  companyMode    String            @default("product")
+  accent         String            @default("brick-red")
+  mode           String            @default("light")
+  fontScale      Int               @default(100)
+  reduceMotion   Boolean           @default(false)
+  onboardingDone Boolean           @default(false)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  refreshTokens  RefreshToken[]
+  skillRatings   SkillRating[]
+  roadmap        Roadmap?
+  resume         Resume?
+  snapshots      Snapshot[]
+  pomodoroSessions PomodoroSession[]
+  interviewSessions InterviewSession[]
+  skillVerifications SkillVerification[]
+  jobMatchAnalyses JobMatchAnalysis[]
+}
+
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+}
+
+model SkillRating {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skillId        String
+  level          Int      @default(0)
+  liveConfidence Boolean  @default(false)
+  updatedAt      DateTime @updatedAt
+
+  @@unique([userId, skillId])
+  @@index([userId])
+}
+
+model Roadmap {
+  id             String        @id @default(cuid())
+  userId         String        @unique
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  durationWeeks  Int           @default(8)
+  hoursPerDay    Int           @default(3)
+  streakCurrent  Int           @default(0)
+  streakLongest  Int           @default(0)
+  lastActiveDate String?
+  generatedAt    DateTime      @default(now())
+
+  weeks          RoadmapWeek[]
+
+  @@index([userId])
+}
+
+model RoadmapWeek {
+  id          String        @id @default(cuid())
+  roadmapId   String
+  roadmap     Roadmap       @relation(fields: [roadmapId], references: [id], onDelete: Cascade)
+  weekNumber  Int
+  focusSkills String
+  resources   String
+  completedAt DateTime?
+
+  tasks       RoadmapTask[]
+
+  @@index([roadmapId])
+}
+
+model RoadmapTask {
+  id        String       @id @default(cuid())
+  weekId    String
+  week      RoadmapWeek  @relation(fields: [weekId], references: [id], onDelete: Cascade)
+  title     String
+  done      Boolean      @default(false)
+  doneAt    DateTime?
+
+  @@index([weekId])
+}
+
+model Resume {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  template       String   @default("classic")
+  personal       String   @default("{}")
+  summary        String   @default("")
+  education      String   @default("[]")
+  skills         String   @default("[]")
+  experience     String   @default("[]")
+  projects       String   @default("[]")
+  certifications String   @default("[]")
+  lastAtsScore   Int?
+  updatedAt      DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model Snapshot {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date           String
+  readinessScore Int
+  role           String
+  companyMode    String
+  categoryScores String   @default("{}")
+  topGaps        String   @default("[]")
+  createdAt      DateTime @default(now())
+
+  @@unique([userId, date])
+  @@index([userId])
+}
+
+model PomodoroSession {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type        String
+  durationMin Int
+  completedAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model InterviewSession {
+  id               String              @id @default(cuid())
+  userId           String
+  user             User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  roleId           String
+  roleTitle        String
+  difficulty       String              @default("intermediate") // beginner | intermediate | advanced
+  overallScore     Int                 @default(0) // 0-100
+  relevanceScore   Int                 @default(0)
+  correctnessScore Int                 @default(0)
+  completenessScore Int                @default(0)
+  feedback         String              @default("")
+  weakTopics       String              @default("[]") // JSON array of topic strings
+  resources        String              @default("[]") // JSON array of [{title, url, platform}]
+  createdAt        DateTime            @default(now())
+
+  questions        InterviewQuestion[]
+
+  @@index([userId])
+}
+
+model InterviewQuestion {
+  id               String           @id @default(cuid())
+  sessionId        String
+  session          InterviewSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  questionText     String
+  category         String           @default("technical") // technical | hr | system-design
+  topic            String           @default("general")
+  difficulty       String           @default("intermediate")
+  userAnswer       String           @default("")
+  score            Int              @default(0) // 0-100
+  relevanceScore   Int              @default(0)
+  correctnessScore Int              @default(0)
+  completenessScore Int             @default(0)
+  feedback         String           @default("")
+  keyPointsMissed  String           @default("[]") // JSON array of missed concepts
+  idealPoints      String           @default("[]") // JSON array of expected core concepts
+  createdAt        DateTime         @default(now())
+
+  @@index([sessionId])
+}
+
+model SkillVerification {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic              String
+  difficulty         String   @default("intermediate") // beginner | intermediate | advanced
+  score              Int      @default(0) // 0-100 percentage
+  totalQuestions     Int      @default(5)
+  correctAnswers     Int      @default(0)
+  timeSpentSeconds   Int      @default(0)
+  passed             Boolean  @default(false)
+  assessmentType     String   @default("mcq") // mcq | coding-challenge
+  detailedResults    String   @default("[]") // JSON array of question results
+  createdAt          DateTime @default(now())
+
+  @@index([userId])
+}
+
+model JobMatchAnalysis {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobTitle           String
+  company            String?
+  jobText            String
+  matchScore         Int      @default(0) // 0-100
+  matchedKeywords    String   @default("[]") // JSON array of string keywords
+  missingKeywords    String   @default("[]") // JSON array of string keywords
+  recommendations    String   @default("[]") // JSON array of actionable bullet improvement suggestions
+  createdAt          DateTime @default(now())
+
+  @@index([userId])
+}
+
+

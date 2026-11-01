@@ -1,0 +1,262 @@
+[
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Languages",
+    "aliases": ["python", "python3", "py"],
+    "prerequisites": [],
+    "importance_score": 0.95,
+    "learning_hours": 30,
+    "why_it_matters": "Python is the dominant language for backend development, AI/ML, and automation with a massive ecosystem."
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Languages",
+    "aliases": ["javascript", "js", "es6", "ecmascript"],
+    "prerequisites": [],
+    "importance_score": 0.95,
+    "learning_hours": 25,
+    "why_it_matters": "The universal language of the web, essential for interactive frontend UIs and full-stack Node.js environments."
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Languages",
+    "aliases": ["typescript", "ts"],
+    "prerequisites": ["javascript"],
+    "importance_score": 0.9,
+    "learning_hours": 20,
+    "why_it_matters": "Adds type safety and scalability to large modern codebases, drastically reducing runtime bugs."
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "aliases": ["react", "react.js", "reactjs"],
+    "prerequisites": ["javascript"],
+    "importance_score": 0.95,
+    "learning_hours": 35,
+    "why_it_matters": "The industry standard UI library for building dynamic, responsive single-page applications and component architectures."
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "category": "Backend",
+    "aliases": ["fastapi", "fast-api"],
+    "prerequisites": ["python", "rest-apis"],
+    "importance_score": 0.9,
+    "learning_hours": 20,
+    "why_it_matters": "High-performance, modern Python async web framework with automatic OpenAPI documentation and type validation."
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "aliases": ["node", "node.js", "nodejs"],
+    "prerequisites": ["javascript"],
+    "importance_score": 0.88,
+    "learning_hours": 25,
+    "why_it_matters": "Enables non-blocking event-driven backend services and unifying full-stack development under one language."
+  },
+  {
+    "id": "rest-apis",
+    "name": "REST APIs",
+    "category": "Backend",
+    "aliases": ["rest", "restful api", "rest api", "restful apis", "rest apis", "api design"],
+    "prerequisites": [],
+    "importance_score": 0.95,
+    "learning_hours": 15,
+    "why_it_matters": "The architectural backbone for client-server communication, microservices, and modern web integrations."
+  },
+  {
+    "id": "sql",
+    "name": "SQL & Relational Databases",
+    "category": "Databases",
+    "aliases": ["sql", "rdbms", "relational databases", "database queries"],
+    "prerequisites": [],
+    "importance_score": 0.92,
+    "learning_hours": 20,
+    "why_it_matters": "Essential for querying, joining, aggregating, and structuring business-critical persistent application data."
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Databases",
+    "aliases": ["postgresql", "postgres", "psql"],
+    "prerequisites": ["sql"],
+    "importance_score": 0.9,
+    "learning_hours": 20,
+    "why_it_matters": "The enterprise open-source database renowned for reliability, complex transactions, ACID compliance, and JSON support."
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Databases",
+    "aliases": ["mongodb", "mongo", "nosql"],
+    "prerequisites": [],
+    "importance_score": 0.8,
+    "learning_hours": 18,
+    "why_it_matters": "Popular document-oriented NoSQL database ideal for flexible schemas, rapid prototyping, and hierarchical payloads."
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Databases",
+    "aliases": ["redis", "in-memory cache", "caching"],
+    "prerequisites": [],
+    "importance_score": 0.82,
+    "learning_hours": 15,
+    "why_it_matters": "Blazing-fast in-memory cache and message broker for low-latency session management and rate limiting."
+  },
+  {
+    "id": "docker",
+    "name": "Docker & Containerization",
+    "category": "Cloud & DevOps",
+    "aliases": ["docker", "containers", "containerization", "docker-compose"],
+    "prerequisites": ["linux"],
+    "importance_score": 0.92,
+    "learning_hours": 25,
+    "why_it_matters": "Ensures software runs identically across local machines, CI environments, and production cloud clusters."
+  },
+  {
+    "id": "git",
+    "name": "Git & Version Control",
+    "category": "Developer Tools",
+    "aliases": ["git", "github", "gitlab", "version control", "pr review"],
+    "prerequisites": [],
+    "importance_score": 0.95,
+    "learning_hours": 12,
+    "why_it_matters": "Foundational requirement for collaborative coding, branching strategies, code reviews, and release tagging."
+  },
+  {
+    "id": "ci-cd",
+    "name": "CI/CD & GitHub Actions",
+    "category": "Cloud & DevOps",
+    "aliases": ["ci/cd", "ci cd", "github actions", "continuous integration", "continuous deployment", "pipelines"],
+    "prerequisites": ["git", "docker"],
+    "importance_score": 0.85,
+    "learning_hours": 20,
+    "why_it_matters": "Automates automated testing, linting, building, and seamless zero-downtime deployments upon git pushes."
+  },
+  {
+    "id": "aws",
+    "name": "AWS Cloud",
+    "category": "Cloud & DevOps",
+    "aliases": ["aws", "amazon web services", "s3", "ec2", "cloud infrastructure"],
+    "prerequisites": ["linux", "docker"],
+    "importance_score": 0.85,
+    "learning_hours": 30,
+    "why_it_matters": "The leading public cloud provider for deploying scalable web applications, serverless functions, and storage."
+  },
+  {
+    "id": "tailwind-css",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "aliases": ["tailwind", "tailwindcss", "utility-first css"],
+    "prerequisites": ["html-css"],
+    "importance_score": 0.85,
+    "learning_hours": 15,
+    "why_it_matters": "Enables rapid, consistent, highly customized responsive UI styling directly inside component markup."
+  },
+  {
+    "id": "html-css",
+    "name": "HTML5 & Modern CSS",
+    "category": "Frontend",
+    "aliases": ["html", "html5", "css", "css3", "responsive design"],
+    "prerequisites": [],
+    "importance_score": 0.9,
+    "learning_hours": 15,
+    "why_it_matters": "The structural and styling foundation of every browser document and responsive interface."
+  },
+  {
+    "id": "linux",
+    "name": "Linux & Bash Scripting",
+    "category": "Developer Tools",
+    "aliases": ["linux", "bash", "shell", "unix", "cli"],
+    "prerequisites": [],
+    "importance_score": 0.82,
+    "learning_hours": 15,
+    "why_it_matters": "Powers over 90% of cloud servers; command-line fluency is indispensable for debugging and automating environments."
+  },
+  {
+    "id": "unit-testing",
+    "name": "Unit Testing & QA",
+    "category": "Methodologies",
+    "aliases": ["unit testing", "testing", "pytest", "jest", "tdd", "integration testing", "test automation"],
+    "prerequisites": [],
+    "importance_score": 0.88,
+    "learning_hours": 18,
+    "why_it_matters": "Ensures software stability, prevents regression errors, and enables safe rapid code refactoring."
+  },
+  {
+    "id": "data-structures",
+    "name": "Data Structures & Algorithms",
+    "category": "Computer Science",
+    "aliases": ["data structures", "algorithms", "dsa", "algorithmic problem solving", "complexity analysis"],
+    "prerequisites": [],
+    "importance_score": 0.88,
+    "learning_hours": 40,
+    "why_it_matters": "Critical for software engineering technical interviews and building memory/time-efficient architectures."
+  },
+  {
+    "id": "machine-learning",
+    "name": "Machine Learning",
+    "category": "AI / ML",
+    "aliases": ["machine learning", "ml", "scikit-learn", "predictive modeling", "supervised learning"],
+    "prerequisites": ["python", "data-structures"],
+    "importance_score": 0.85,
+    "learning_hours": 40,
+    "why_it_matters": "Provides algorithmic ability to learn patterns from historical data and make intelligent predictions."
+  },
+  {
+    "id": "nlp",
+    "name": "Natural Language Processing (NLP)",
+    "category": "AI / ML",
+    "aliases": ["nlp", "natural language processing", "text processing", "tokenization", "sentiment analysis"],
+    "prerequisites": ["machine-learning", "python"],
+    "importance_score": 0.82,
+    "learning_hours": 30,
+    "why_it_matters": "Empowers computers to understand, interpret, extract insights, and manipulate human language."
+  },
+  {
+    "id": "transformers",
+    "name": "Sentence Transformers & LLMs",
+    "category": "AI / ML",
+    "aliases": ["sentence transformers", "transformers", "llm", "large language models", "embeddings", "semantic search", "hugging face"],
+    "prerequisites": ["nlp", "python"],
+    "importance_score": 0.86,
+    "learning_hours": 25,
+    "why_it_matters": "The core modern technique for vector embeddings, semantic search, RAG pipelines, and generative AI."
+  },
+  {
+    "id": "system-design",
+    "name": "System Design & Architecture",
+    "category": "Computer Science",
+    "aliases": ["system design", "distributed systems", "scalability", "software architecture", "load balancing"],
+    "prerequisites": ["rest-apis", "sql", "docker"],
+    "importance_score": 0.9,
+    "learning_hours": 35,
+    "why_it_matters": "Essential for architecting scalable, resilient, highly available production systems handling heavy traffic."
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "category": "Backend",
+    "aliases": ["graphql", "apollo", "graphql schema"],
+    "prerequisites": ["rest-apis"],
+    "importance_score": 0.78,
+    "learning_hours": 15,
+    "why_it_matters": "Allows frontend clients to query exactly the data fields they need in a single round trip."
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices",
+    "category": "Backend",
+    "aliases": ["microservices", "microservice architecture", "service mesh"],
+    "prerequisites": ["rest-apis", "docker"],
+    "importance_score": 0.8,
+    "learning_hours": 20,
+    "why_it_matters": "Decouples large software into independently deployable, modular services maintained by dedicated teams."
+  }
+]
